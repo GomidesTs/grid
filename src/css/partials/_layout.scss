@@ -1,0 +1,46 @@
+@media (min-width: 700px) {
+    .page {
+        max-width: 117rem;
+        padding: 0 2rem;
+    }
+
+    main {
+        grid-template-areas:
+            "B A"
+            "C D";
+    }
+
+    & div:nth-child(1) {
+        grid-area: A;
+    }
+    & div:nth-child(2) {
+        grid-area: B;
+    }
+    & div:nth-child(3) {
+        grid-area: C;
+    }
+    & div:nth-child(4) {
+        grid-area: D;
+    }
+}
+
+@media (min-width: 930px) {
+    main {
+        grid-template-areas:
+            "B A A"
+            "C C D";
+    }
+
+    & div:nth-child(1) {
+        grid-area: A;
+    }
+    & div:nth-child(2) {
+        grid-area: B;
+    }
+    & div:nth-child(3) {
+        grid-area: C;
+    }
+    & div:nth-child(4) {
+        grid-area: D;
+    }
+}
